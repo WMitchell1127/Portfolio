@@ -1,0 +1,19 @@
+@import './varibles';
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    // font-family: Ubuntu !important;
+}
+
+.navbar-brand {
+    font-family: audiowide;
+    font-size: 1.35em !important;
+}
+
+.nav-hover:hover {
+    cursor: pointer;
+}
+

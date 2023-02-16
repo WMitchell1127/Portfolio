@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: Ubuntu !important;
+}
+.services-menu{
+  display: flex;
+  align-items: center;
+  border-top:2px solid white;
+  overflow: hidden;
+}
+.experience-list{
+  display: flex;
+  align-items: center;
+  border-bottom:2px solid white;
+  overflow: hidden;
+}
+
+.loginLink {
+  position: relative;
+  right: 4rem;
+}
+
+.back-to-top-btn{
+  position: fixed;
+  height: 10vh;
+  width: 10vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+  top:85vh;
+  right:0vh;
+  border-top-left-radius:10px;
+  border-bottom-left-radius:10px;
+  transform: translateX(15vw);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  opacity: .0;
+}
+.back-to-top-btn i {
+  font-size:2.75rem;
+}
+.back-to-top-btn-show{
+  transform: translateX(0vw);
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+
+
+/* media queries */
+
+@media (max-width: 360px) {     
+  
+  .socialIcons {
+    display: none !important;
+  }
+} 
+
+@media (max-width: 700px) {     
+  .servicesImg {         
+    display: none !important;     
+  } 
+  .back-to-top-btn {
+    display: none !important;
+  }
+} 
