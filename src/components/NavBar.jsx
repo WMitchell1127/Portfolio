@@ -1,58 +1,66 @@
-import React, { Fragment, useState } from 'react';
-import {
-    Navbar,
-    Collapse,
-    NavbarToggler,
-    NavbarText,
-    Nav, 
-    NavItem,
-} from 'reactstrap';
-// import { authContext } from ''
+import React, { useState, useRef, useEffect } from 'react';
+import { links, social } from '../assets/data';
+import { FaBars } from 'react-icons/fa';
+import logo from '../logo.svg';
 
-const navStyle = {
-    // boxShadow: '2px 3px 4px burlywood'
-}
 
 export const NavBar = () => {
-    // const state = useContext(authContext);
-    const { isAuthenticated } = state;
-    const [isOpen, setIsOpen] = useState(false);
-    const toggler = () => setIsOpen(isOpen);
+    const [showLinks, setShowLinks] = useState(false);
+    const linksContainerRef = useRef(0);
+    const linksRef = useRef(null);
+    const toggleLinks = () =>{
+        setShowLinks(!showLinks);
+    };
 
-    const authLinks = (
-        <Fragment>
-            <NavItem>
-                Project                
-            </NavItem>
-            <NavItem>
-                Project                
-            </NavItem>
-            <NavItem>
-                Project                
-            </NavItem>
-        </Fragment>
-    );
+     // useEffects here is used for the CSS and responsive drop-menu
+  useEffect(() => {
+    // The ### .getBoundingClientReact() ### method returns an object
+    //  providing info about the size of an element and its
+    //  position relative to the viewport.
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '0px';
+    }
+  }, [showLinks]);
+    
+
     return (
-        <Navbar color='dark' dark expand='sm' className='sticky-top' style={navStyle}>
-            {/* <NavbarBrand>
-             <i className="fas fa-book fa-2x align-middle mr-4"  /> 
-          <a href='#' className='text-warning'>Software Developer Portfolio</a>
-             </NavbarBrand> */}
-
-            <NavbarToggler onClick={toggler} />
-            <Collapse isOpen={isOpen} navbar>
-                <NavbarText className='ml-auto'>
-                    {isAuthenticated ? 'Welcome, Batman!!' : 'Making the Web a better safe place!!!'}
-                </NavbarText>
-                <Nav className='ml-auto flex-row' navbar>
-                    <ul>
-                        <li>contact</li>
-                        <li>projects</li>
-                        <li>About</li>
+        <>
+            <div className='nav-center'>
+                <div className='nav-header'>
+                    {/* <a href="https://reactjs.org/" target={'_blank'} rel="noopener noreferrer">
+                    <img src={logo} className='logo' alt='logo' style={{color:'red'}}/>
+                    </a> */}
+                    {/* <p className='navTitle' style={{paddingTop:"10px",color:'burlywood',fontSize:'30px'}}>Web Development</p> */}
+                    <button className='nav-toggle' onClick={toggleLinks}>
+                        <FaBars style={{color:'burlywood'}}/>
+                    </button>
+                </div>
+                <div className='links-container' ref={linksContainerRef}>
+                    <ul className='links' ref={linksRef} style={{border:'3px solid red'}}>
+                        {links.map((link) => {
+                            const { id, url, text } = link;
+                            return (
+                                <li key={id}>
+                                    <a href={url} target='_blank'>{text}</a>
+                                </li>
+                            );
+                        })}
                     </ul>
-                    {isAuthenticated ? authLinks : guestlinks}
-                </Nav>
-            </Collapse>
-        </Navbar>
-    )
-}
+                </div>
+                <ul className='social-icons'>
+                  {/* {social.map((socialIcon) => {
+                    const { id, url, icon } = socialIcon;
+                    return(
+                        <li key={id}>
+                            <a href={url}>{icon}</a>
+                        </li>
+                    );
+                  })} */}
+                </ul>
+            </div>
+        </>
+    );
+};

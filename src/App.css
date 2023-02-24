@@ -1,3 +1,63 @@
+
+/*=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.4s linear;
+  /* --spacing: 0.1rem; */
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +96,377 @@
     transform: rotate(360deg);
   }
 }
+
+/* ############################################### */
+/* ***************** HomePage CSS **************** */
+/* ############################################### */
+
+.homeDiv{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.row {
+  margin: 0px 0px !important;
+  
+  justify-content: center;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  
+  float: left;
+  width: 40%;
+  
+  
+}
+
+/* Clear floats after rows */ 
+.column {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content1::after {
+  border-radius: 50%;
+  margin-top: 80px;
+  margin-right: 100px;
+  height: 450px;
+  width: 500px;
+  background-image: radial-gradient(
+    circle, rgb(36, 33, 33), 
+    rgb(52, 47, 47), 
+    black, 
+    black
+    );
+    box-shadow: -10px -5px 25px 12px burlywood;  
+}
+.center{
+  text-align: center;
+  margin-top: 200px;
+}
+.circleText{
+  /* text-align: center; */
+  /* margin-top: 100px; */
+  padding-top: 150px;
+}
+.content {
+  /* background-color: white; */
+  padding: 10px;
+}
+
+.profileImg{ 
+  width: 100%;
+  max-width: 400px;
+  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column{
+    width: 50%;
+    /* background-color: red;   */
+  }
+  .content1{
+  margin-top: 0%;
+  margin-right: 0;
+}
+  .content img{
+    width: 50%
+  }
+  .profileImg{    
+    /* box-shadow: 10px 10px 5px 12px lightblue !important;
+    width: 70%; */
+  
+
+  }
+  .homeDiv{
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .profileImg{    
+    /* box-shadow: 10px 10px 5px 12px lightblue !important; */
+    
+    width: 100% !important;
+  }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and(max-width: 650px) {
+  .column {
+    width: 100%;
+    
+  }
+  .profileImg{    
+    box-shadow: 9px 9px 15px 18px rgb(230, 213, 173) !important;
+    width: 60vw !important;
+    height: 55vh;
+  }
+}
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* ************* Navbar CSS ***************** */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+ul {
+  list-style-type: none;
+  
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+/*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                       Navbar
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*/
+
+
+/* nav {
+  background: var(--clr-red-dark);
+  box-shadow: var(--light-shadow);
+} */
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--clr-primary-1);
+  transform: rotate(720deg); 
+  transform-origin: 50% 50%;
+  transition: var(--transition);
+  /* transform: translate3d(0,9.5px,0) rotate(45deg); */
+}
+
+/* *************** React Logo CSS ******************** */
+.logo {
+  height: 60px;
+  
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* $$$$$$$$$$$$$$$$$$$ NAVBAR LINKS $$$$$$$$$$$$$$$$$$$$$$$ */
+.links a {
+  color:burlywood;
+  font-size: 1rem;
+  text-transform: capitalize;
+  /* letter-spacing: var(--spacing); */
+  display: block;
+  /* padding: 0.5rem 1rem; */
+  transition: var(--transition);
+  /* background: var(--clr-primary-8); */
+  width: 100px;
+  float: none;
+  color: rgb(160, 113, 3);
+  padding: 12px 16px;
+  text-decoration: none !important;
+  display: block;
+  text-align: left;
+  
+}
+.links a:hover {
+  /* background: var(--clr-primary-8); */
+  color: var(--clr-grey-10);
+  padding-left: 1.5rem;
+  font-size: x-large;
+}
+.social-icons {
+  display: none;
+  margin-left: 0px 0px auto;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-container {
+  height: 10rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px){
+  .homeTitle{
+    color:  #ff001e !important;    
+    /* display: flex; */
+    /* margin-left: 300px; */
+    /* padding-left: 200px; */
+    /* align-items: center; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* background-color: red; */
+
+    
+  }
+  .navTitle{
+    color: #ff8800 !important
+  }
+}
+
+/* .nav-center {
+  max-width: 1170px;    
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  
+  
+}   */
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;    
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+    
+  }
+  .links-container {
+    height: auto !important;
+    
+  }
+  .links {
+    display: flex;
+    z-index: 1;
+    width: 100vw;
+    
+        
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+   
+    
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+    /* color: red; */
+    
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+  }
+  .social-icons a:hover {
+    color: var(--clr-primary-7);
+  }
+}
+
+
+
+
+
+
+
+
