@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { ContactBtn } from "../components/ContactBtn";
 // import Contact from '../components/Contact'
 
 
@@ -20,14 +21,14 @@ export const links = [
         text: 'Projects',  
     },
     {
-        id: 4,
-        url: '#contactMe',
-        label:'contact',
+        id: '#contactMe',
+        
+        url: '/',
         text: 'Contact',  
     },
     {
         id: 5,
-        url: 'src/assets/myResume.docx',
+        url: '/',
         text: 'Resume',  
     },
 ];
@@ -37,6 +38,7 @@ export const social = [
     {
         id:2,
         url: 'http://www.linkedin.com',
+        name:'name',
         icon: <FaLinkedin />,
     },
     {

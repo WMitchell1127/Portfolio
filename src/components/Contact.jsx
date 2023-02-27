@@ -23,9 +23,7 @@ export const ContactSec = () => {
     <div>
       <Container className='mt-1' id="contactMe">
         <div style={secDiv} className="services-menu" id="contactUs">
-
           <h1 className="text-white m-2">Contact Me</h1>
-
           <ContactForm />
 
           {/* <p className="mt-5">

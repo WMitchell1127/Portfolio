@@ -179,7 +179,8 @@ Global Styles
   margin-right: 0;
 }
   .content img{
-    width: 50%
+    width: 50%;
+    z-index: 0.9;
   }
   .profileImg{    
     /* box-shadow: 10px 10px 5px 12px lightblue !important;
@@ -220,6 +221,16 @@ Global Styles
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* ************* Navbar CSS ***************** */
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.contactbtn{
+  height: 20px;
+  width: 6rem;
+  border: 3px solid red;
+}
+
+.btn-text{
+  color: black;
+}
 
 ul {
   list-style-type: none;
@@ -461,6 +472,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
   .social-icons a:hover {
     color: var(--clr-primary-7);
   }
+}
+
+.Selfie2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 

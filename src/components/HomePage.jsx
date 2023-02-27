@@ -30,7 +30,7 @@ export const HomePage = () => {
         </div>
         <div className="column" >
           <div className="content" >
-            <img src={IMG_0048} alt="Selfie" className="profileImg" />
+            <img src={IMG_0048} alt="Selfie" className="profileImg"></img>
           </div>
         </div>
       </div>
