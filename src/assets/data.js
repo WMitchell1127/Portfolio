@@ -23,7 +23,7 @@ export const links = [
     {
         id: '#contactMe',
         
-        url: '/',
+        url: '/Contact',
         text: 'Contact',  
     },
     {

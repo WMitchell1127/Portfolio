@@ -8,12 +8,14 @@ import './assets/css/main.css';
 import './assets/vendor/fontAwesome/css/all.css';
 import './assets/vendor/bootswatch/cyborg.css';
 import 'react-toastify/dist/ReactToastify.css'
+import { NavbarTwo } from './components/Navbar2';
 
 
 
 export const App = () => {  
   return (
     <div className="App">
+      <NavbarTwo />
       {/* <NavBar />        */}
       <HomePage />      
     </div>
