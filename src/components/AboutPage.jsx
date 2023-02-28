@@ -1,4 +1,10 @@
 import React from "react"
+import {
+  Container,
+  Row,
+  Col,
+  
+} from 'reactstrap'
 
 export const About = () => {
     return(
@@ -28,7 +34,7 @@ export const About = () => {
 
           <Col sm='0' md='6' lg='8' className="">
             <img
-              src={Codes}
+              // src={Codes}
               className="img-fluid"
               alt="Menu"
             />
@@ -41,7 +47,7 @@ export const About = () => {
         <Row className="" id="about">
           <Col sm='4' md='6' lg='8'>
             <img
-              src="./img/code3.jpg"
+              src="./assets/img/Codes.jpg"
               className="img-fluid mt-2"
               alt="code"
             />

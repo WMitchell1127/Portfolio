@@ -1,9 +1,10 @@
 import React from "react";
-// import { Container } from "reactstrap";
-// import { NavBar } from "./NavBar";
+
+
 import { ContactSec } from "./Contact"
 import IMG_0048 from "../assets/img/IMG_0048-edited.jpg"
 import { NavBar } from "./NavBar";
+import { About } from "./AboutPage";
 
 
 
@@ -14,7 +15,7 @@ export const HomePage = () => {
 
 
   return (
-    <div className="homeDiv" >
+    <div className="homeDiv" id="aboutMe" >
       <div className="topNav">
         <NavBar />
       </div>
@@ -34,6 +35,7 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
+      <About />
       <ContactSec />
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react";
-import { FaGithub, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { ContactBtn } from "../components/ContactBtn";
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+// import { ContactBtn } from "../components/ContactBtn";
 // import Contact from '../components/Contact'
 
 
 export const links = [
     {
-        id: 1,
-        url: '/',
+        id: '1',
+        url: '/AboutPage',
         text: 'About',
     },
     {
@@ -21,8 +21,7 @@ export const links = [
         text: 'Projects',  
     },
     {
-        id: '#contactMe',
-        
+        id: 4,        
         url: '/Contact',
         text: 'Contact',  
     },

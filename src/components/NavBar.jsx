@@ -45,7 +45,7 @@ export const NavBar = () => {
                             const { id, url, text } = link;
                             return (
                                 <li key={id}>
-                                    <a href={url} target='_blank'>{text}</a>
+                                    <a href={url}>{text}</a>
                                 </li>
                             );
                         })}
