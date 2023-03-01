@@ -106,8 +106,7 @@ Global Styles
   margin-left: 100px;
 }
 .row {
-  margin: 0px 0px !important;
-  
+  margin: 0px 0px !important;  
   justify-content: center;
 }
 
@@ -117,13 +116,11 @@ Global Styles
   padding: 8px;
 }
 
+
 /* Create four equal columns that floats next to each other */
-.column {
-  
+.column {  
   float: left;
-  width: 40%;
-  
-  
+  width: 40%;  
 }
 
 /* Clear floats after rows */ 
@@ -152,10 +149,16 @@ Global Styles
   text-align: center;
   margin-top: 200px;
 }
+
+
 .circleText{
-  /* text-align: center; */
-  /* margin-top: 100px; */
-  padding-top: 150px;
+   /* padding-top: 150px; */
+  padding: 0.5rem 1rem;
+  margin: 4rem 0 0;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background: linear-gradient(black, white);
 }
 .content {
   /* background-color: white; */
@@ -164,8 +167,7 @@ Global Styles
 
 .profileImg{ 
   width: 100%;
-  max-width: 400px;
-  
+  max-width: 400px;  
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -176,18 +178,13 @@ Global Styles
   }
   .content1{
   margin-top: 0%;
-  margin-right: 0;
+  /* margin-: 30%; */
 }
   .content img{
     width: 50%;
     z-index: 0.9;
   }
-  .profileImg{    
-    /* box-shadow: 10px 10px 5px 12px lightblue !important;
-    width: 70%; */
   
-
-  }
   .homeDiv{
     margin-top: 5px;
     margin-left: 0;
@@ -195,9 +192,7 @@ Global Styles
 }
 
 @media screen and (max-width: 900px){
-  .profileImg{    
-    /* box-shadow: 10px 10px 5px 12px lightblue !important; */
-    
+  .profileImg{      
     width: 100% !important;
   }
 }
@@ -215,12 +210,6 @@ Global Styles
     height: 55vh;
   }
 }
-
-
-
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-/* ************* Navbar CSS ***************** */
-/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 .contactbtn{
   height: 20px;
@@ -375,8 +364,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 .links a:hover {
   /* background: var(--clr-primary-8); */
   color: var(--clr-grey-10);
-  padding-left: 1.5rem;
-  font-size: x-large;
+  padding-left: .7rem;
+  /* font-size: large; */
 }
 .social-icons {
   display: none;
@@ -393,32 +382,14 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 @media screen and (min-width: 200px) and (max-width: 600px){
   .homeTitle{
-    color:  #ff001e !important;    
-    /* display: flex; */
-    /* margin-left: 300px; */
-    /* padding-left: 200px; */
-    /* align-items: center; */
-    /* width: 100%; */
-    /* display: flex; */
-    /* background-color: red; */
-
-    
+    color:  #ff001e !important;   
   }
   .navTitle{
     color: #ff8800 !important
   }
 }
 
-/* .nav-center {
-  max-width: 1170px;    
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  
-  
-}   */
+
 
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -427,9 +398,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    
-    
+    padding: 1rem;    
   }
   .nav-header {
     padding: 0;
@@ -443,22 +412,20 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     
   }
   .links {
-    display: flex;
-    z-index: 1;
-    width: 100vw;
-    
-        
+    display: flex;    
+    width: 100vw;       
   }
   .links a {
-    padding: 0;
-    margin: 0 0.5rem;
+    /* padding: 0; */
+    margin: 0 1.5rem;
    
     
   }
   .links a:hover {
-    padding: 0;
-    background: transparent;
+    /* padding: 0; */
+    /* background: transparent; */
     /* color: red; */
+    font-size: large !important;
     
   }
   .social-icons {
