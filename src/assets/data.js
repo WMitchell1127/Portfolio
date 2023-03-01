@@ -6,13 +6,13 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export const links = [
     {
-        id: '1',
-        url: '/AboutPage',
+        id: '#aboutMe',
+        url: '/AboutPage.jsx',
         text: 'About',
     },
     {
         id: 2,
-        url: '/',
+        url: '/AboutPage',
         text: 'Profile',  
     },
     {
@@ -27,7 +27,7 @@ export const links = [
     },
     {
         id: 5,
-        url: '/',
+        url: './',
         text: 'Resume',  
     },
 ];

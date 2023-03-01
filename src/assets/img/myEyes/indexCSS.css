@@ -1,0 +1,357 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face{
+    font-family: myFont;
+    src: url(./AguafinaScript-Regular.ttf);
+}
+body{
+    background-color: brown;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: 0px;
+    font-size: 20px; 
+    padding: 0%; 
+    color: brown;  
+    position: absolute;   
+    z-index: 999; 
+    background-size: cover;
+}
+
+
+@media(max-width: 400px){
+    body{
+      font-size: 30px;
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  @media(max-height: 400px){
+    body{
+      font-size: 30px;
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }  
+
+/****************************** Background Image **********************/
+.img-monument{
+    background-image: url(monument-valley-overview_dp_680.jpg);
+    width: 100%;
+    height: 800px;
+    z-index: -999999;
+    position: fixed;
+    background-size: cover;
+    justify-content: center;
+    margin: auto; 
+      
+    
+}
+
+.overlay{
+    width: 100%;
+    height: 800px;
+    padding: 0%;
+    margin: 0%;
+    z-index: -9999;
+    background-color: rgba(133, 32, 55, 0.35);
+    position: fixed; 
+    background-size: cover;
+    justify-content: center;
+    
+}
+
+h1 {   
+    font-family: myFont;
+    font-size: 90px;
+    -webkit-text-fill-color: burlywood;
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    top: 0;   
+    border-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    margin-top: 70px;
+    text-shadow: 0 10px 5px rgba(0,0,0,.99), 0 6px 5px rgba(0,0,0,0.85);
+    
+    
+         
+} 
+
+
+
+/*********************   Header  **************************/
+
+.img-header{
+    width: 1200px;
+    height: 400px;
+    margin: 10px auto 10px auto; 
+    text-align: center; 
+    font-size: 10px;
+    border: 20px;
+    border-color: peru;
+    padding: 0px;
+    border-style: ridge;
+    box-shadow: 0 10px 5px rgba(0,0,0,.99), 0 6px 5px rgba(0,0,0,0.85);
+}
+.p-header{
+    color: peachpuff;
+    font-weight: bold;
+    text-shadow: 0 10px 5px rgba(0,0,0,.99), 0 6px 5px rgba(0,0,0,0.85);
+}
+
+.submit{
+    color: #000;
+}
+
+#nav-bar{
+    border-color: black;
+    border-style: solid;
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    font-size: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    
+    
+
+}
+
+.nav-link{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: white; */
+    /* font-size: 20px; */
+   
+    
+}
+
+/***************************** Hover Effect *********************/
+
+#hover-effect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    /* background-color: rgba(196, 103, 28, .1); */
+    overflow: hidden;
+    font-size: 15px;
+    /* color: chocolate; */
+    font-weight: bold;
+    flex-wrap: nowrap;
+    font-style: italic;
+   
+    
+}
+
+
+@import url("https://font.goggleapis.com/css?family-poppins:300,400,500,600,700,800,900&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    color: burlywood;
+}
+ul li a{
+    position: relative;
+    display: block;
+    /* color: transparent; */
+    -webkit-text-stroke: 1px #000;
+    font-size: 2em;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 1.2em;
+ 
+
+}
+
+ul li a:hover{
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+    transition: 0.2s;   
+
+}
+ul li a:hover:before{
+    color: #f00;
+    z-index: 1;
+    -webkit-text-stroke: 1px #000;
+    transform: translate(-10px, 10px);
+}
+
+ul li a:before,
+ul li a:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s;
+
+}
+ul li a:hover:before{
+    color: brown;
+    z-index: 1;
+    -webkit-text-stroke: 1px #000;
+    transform: translate(-10px, 10px);
+}
+
+ul li a:hover:after{
+    color: burlywood;
+    z-index: 2;
+    -webkit-text-stroke: 1px #000;
+    transform: translate(-20px, 20px);
+}
+/**************************** End Hover Effect *********************/
+header{
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    
+ 
+}
+
+#email{
+    text-align: center;
+    margin: 10px;
+    
+    
+}
+
+
+
+#features{
+    color: peachpuff;
+    padding: 20px;
+    height: 400px;
+    margin-right: 130px;
+    text-shadow: 0 10px 5px rgba(0,0,0,.99), 0 6px 5px rgba(0,0,0,0.85);
+}
+
+
+.div-li{
+    margin-left: 30px;
+    margin-top: 30px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 200px;
+    text-align: center;
+    font-size: 20px;
+    color: peachpuff;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0 10px 5px rgba(0,0,0,.99), 0 6px 5px rgba(0,0,0,0.85);
+    
+    
+}
+
+.img-list{
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    
+}
+
+.div-img{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;    
+       
+}
+
+.p-adv{
+    font-size: 80px;
+    text-align: center;
+    /* border: 10px;
+    border-color: black;
+    padding: 50px;
+    border-style: solid; */
+    height: 200px; 
+    margin-top: 30px;
+    -webkit-text-fill-color: burlywood;
+    font-family: myFont;
+    font-weight: 600;
+    text-shadow: 0 10px 5px rgba(0,0,0,.99), 0 6px 5px rgba(0,0,0,0.85);
+    
+}
+
+h2{
+    font-size: 35px;
+    src: url(./constanz.ttf);
+    font-weight: bold;
+    /* justify-content: space-evenly; */
+    margin-top: 20px;
+    font-style: oblique; 
+    text-align: right;
+    margin: 0px 30px 40px 10px; 
+    text-shadow: 0 10px 5px rgba(0,0,0,.99), 0 6px 5px rgba(0,0,0,0.85);
+    /* box-shadow: #000; */
+    
+}  
+
+#features{
+    font-size: 20px;
+    font-style: oblique;
+    margin: 20px;
+    text-shadow: 0 10px 5px rgba(0,0,0,.99), 0 6px 6px rgba(0,0,0,0.80);
+}
+
+.img{
+    height: 300px;
+    width: 450px;
+    float: left;
+    margin: 0px 10px 0px 10px;
+    box-shadow: 0 10px 5px rgba(3, 3, 3, 0.99), 0 6px 5px rgba(3, 3, 3, 0.85);
+        
+}
+
+#footer{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    color: black;
+    font-size: 5px;
+    margin-left: 1500px;
+        
+}
+
+span{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
