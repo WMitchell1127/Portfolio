@@ -5,7 +5,9 @@ import {NavLink, Button} from 'reactstrap';
 export const ContactBtn = () => {
     return (
     <NavLink href="#contactUs" >
-            <Button className='contactbtn' size='sm' color='secondary'>Contact Me  <i className="btn-text fab fa-mailchimp" /></Button>
+            <Button className='contactbtn' size='sm' color='secondary'>
+                Contact Me  <i className="btn-text fab fa-mailchimp" />
+            </Button>
         </NavLink>
     )
 }

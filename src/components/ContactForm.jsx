@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+
 // import { authContext } from "../context/AuthProvider";
 import {
     Button,
@@ -11,7 +12,7 @@ import {
 // import axios from 'axios';
 // import { toast } from 'react-toastify'
 
-export const ContactForm = () => {
+export const ContactForm = () => {   
     // const state = useContext(authContext);
     // const [name, setName] = useState('');
     // const [email, setEmail] = useState('');

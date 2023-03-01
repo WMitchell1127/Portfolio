@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, useContext, Fragment } from "react";
 import { ContactForm } from "./ContactForm";
 
 import {
@@ -8,17 +8,23 @@ import {
    NavbarToggler,
    Nav,   
 } from 'reactstrap';
+import { Skills } from "./Skills";
 
 
-const NavBarTwo =() => {
+ const NavBarTwo =() => {
+    
     const [isOpen, setIsOpen] = useState(false);
   const toggler = () => setIsOpen(!isOpen);
+  
 
 
     const guestLinks = ( 
         <Fragment >
             <navItem>
                 <ContactForm />
+            </navItem>
+            <navItem>
+                <Skills />
             </navItem>
         </Fragment>
 

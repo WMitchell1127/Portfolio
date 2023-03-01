@@ -30,14 +30,18 @@ export const ContactSec = () => {
             {" "}
             Do not hesitate to contact me for a Free Quote.
           </p> */}
-          {/* <p>
+          <p>
              13201 S. Wakial loop
             Phoenix Az, 85044
           </p>
           <p>
             You can also contact me by phone 480-931-1131 or email{" "}
-            <span style={{ color: "burlywood" }}><a href="http://www.google.com/mail" target='_blank'>wayne.mitchell.1127@gmail.com</a></span>
-          </p> */}
+            <span style={{ color:"burlywood" }}>
+              <a href="mailto:wayne.mitchell.1127@gmail.com?subject='subject text'">
+                wayne.mitchell.1127@gmail.com
+              </a>
+            </span>
+          </p>
 
           {/* //////////////// social media icons ////////////// */}
           <Container>

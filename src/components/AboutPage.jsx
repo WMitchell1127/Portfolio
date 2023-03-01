@@ -1,63 +1,32 @@
 import React from "react"
+import batman from '../assets/img/batman.jpg'
+import John from '../assets/img/myEyes/john-ford-point-1200x858.jpg'
 import {
   Container,
   Row,
   Col,
-  
+
 } from 'reactstrap'
 
 export const About = () => {
-    return(
-        <div>
-            <Container className='mb-1'>
-        {/* <!-- Experience Section --> */}
-        <Row className="experience-list" >
-          <Col sm='12' md='6' lg='4'>
-            <h1>Languages</h1>
-            <h5 className='pl-3'>In Coding...</h5>
-            <ul>
-              <li>JavaScript</li>
-              <li>Bootstrap</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Mongoose</li>
-              <li>Express</li>
-              <li>Node.Js</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>JQuery</li>
-              
-              <li>Pug</li>
-              
-            </ul>
-          </Col>
-
-          <Col sm='0' md='6' lg='8' className="">
-            <img
-              // src={Codes}
-              className="img-fluid"
-              alt="Menu"
-            />
-          </Col>
-        </Row>
-      </Container>
-
+  return (
+    <div id="aboutMe">
       <Container className='mt-5 mb-5'>
         {/* <!-- About Section --> */}
+            <h1 className="text-center">About Me</h1>
         <Row className="" id="about">
           <Col sm='4' md='6' lg='8'>
             <img
-              src="./assets/img/Codes.jpg"
+              src={John}
               className="img-fluid mt-2"
               alt="code"
             />
           </Col>
 
           <Col sm='8' md='6' lg='4'>
-            <h1 className="text-center">About Me</h1>
             <h5 className="text-center">Coding since 2020</h5>
             <p className="text-large">
-              I first learned to code at Persevere code camp with the MERN stack. 
+              I first learned to code at Persevere code camp with the MERN stack.
               Since then I have continued to grow and acquire new languages. I am honest, reliable, trustworthy, and very affordable.
               I live in Arizona, but can work remotely from anywhere. No job is too big or too small for me. I can help you
               with making a website, getting traffic to your site, re-branding, and to make your business grow.
@@ -70,8 +39,8 @@ export const About = () => {
         </Row>
       </Container>
       {/* <Container className='mb-1'> */}
-        {/* <!-- Menu Section --> */}
-        {/* <Row className="m-3 services-menu" id="menu">
+      {/* <!-- Menu Section --> */}
+      {/* <Row className="m-3 services-menu" id="menu">
           <Col sm='12' md='6' lg='4'>
             <h1 className="text-center mt-4">My Services</h1>
             <h4>Web Design</h4>
@@ -116,6 +85,6 @@ export const About = () => {
         </Row>
       </Container> */}
 
-        </div>
-    )
+    </div>
+  )
 }

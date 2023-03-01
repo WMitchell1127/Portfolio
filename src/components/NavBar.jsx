@@ -7,7 +7,7 @@ import { ContactBtn } from './ContactBtn';
 
 export const NavBar = () => {
     const [showLinks, setShowLinks] = useState(false);
-    const linksContainerRef = useRef(0);
+    const linksContainerRef = useRef();
     const linksRef = useRef(null);
     const toggleLinks = () => {
         setShowLinks(!showLinks);
@@ -52,7 +52,7 @@ export const NavBar = () => {
                     </ul>
                 </div>
                 <ul className='social-icons'>                    
-                    <ContactBtn />
+                    {/* <ContactBtn /> */}
                 </ul>
             </div>
         </>
