@@ -73,16 +73,7 @@ Global Styles
   }
 }
 
-.App-header {
-  background-color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  /* font-size: calc(10px + 9vmin); */
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -97,12 +88,29 @@ Global Styles
   }
 }
 
+.homepagenavbar{
+ background-image: linear-gradient(to right, black 30% , burlywood) !important;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* &&&&&&&&&&&&&&&&& Navbar &&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+.chaaTitle{
+  color:burlywood !important;
+  border-bottom: 3px solid;
+}
+@media screen and (max-width: 900px) {
+  .chaaTitle{
+    color: burlywood !important;
+  }
+}
+
 /* ############################################### */
 /* ***************** HomePage CSS **************** */
 /* ############################################### */
 
 .homeDiv{
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-left: 100px;
 }
 .row {
@@ -119,8 +127,9 @@ Global Styles
 
 /* Create four equal columns that floats next to each other */
 .column {  
-  float: left;
-  width: 40%;  
+  /* float: left; */
+  width: 40%; 
+  height: 40vh !important; 
 }
 
 /* Clear floats after rows */ 
@@ -131,20 +140,7 @@ Global Styles
 }
 
 /* Content */
-.content1::after {
-  border-radius: 50%;
-  margin-top: 80px;
-  margin-right: 100px;
-  height: 450px;
-  width: 500px;
-  background-image: radial-gradient(
-    circle, rgb(36, 33, 33), 
-    rgb(52, 47, 47), 
-    black, 
-    black
-    );
-    box-shadow: -10px -5px 25px 12px burlywood;  
-}
+
 .center{
   text-align: center;
   margin-top: 200px;
@@ -155,19 +151,24 @@ Global Styles
    /* padding-top: 150px; */
   padding: 0.5rem 1rem;
   margin: 4rem 0 0;
-  color: white;
+  /* color: white; */
   font-size: 3rem;
   text-transform: uppercase;
-  background: linear-gradient(black, white);
+  background: linear-gradient(black, burlywood, black);
 }
-.content {
-  /* background-color: white; */
+.gradient-text {
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+}
+/* .content {
+  background-color: white;
   padding: 10px;
-}
+} */
 
 .profileImg{ 
   width: 100%;
-  max-width: 400px;  
+  max-width: 400px;
+  margin-left: 0px;
+  /* border: 3px solid */
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -177,12 +178,12 @@ Global Styles
     /* background-color: red;   */
   }
   .content1{
-  margin-top: 0%;
+  /* margin-top: 0%; */
   /* margin-: 30%; */
 }
   .content img{
-    width: 50%;
-    z-index: 0.9;
+    /* width: 50%; */
+    /* z-index: 0.9; */
   }
   
   .homeDiv{
@@ -194,6 +195,7 @@ Global Styles
 @media screen and (max-width: 900px){
   .profileImg{      
     width: 100% !important;
+    
   }
 }
 
@@ -204,11 +206,11 @@ Global Styles
     width: 100%;
     
   }
-  .profileImg{    
+  /* .profileImg{    
     box-shadow: 9px 9px 15px 18px rgb(230, 213, 173) !important;
     width: 60vw !important;
     height: 55vh;
-  }
+  } */
 }
 
 .contactbtn{
@@ -222,9 +224,9 @@ Global Styles
 }
 
 ul {
-  list-style-type: none;
-  
+  list-style-type: none;  
 }
+
 a {
   text-decoration: none;
 }
@@ -236,19 +238,20 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  color: #ec8510 !important;
 }
-h1 {
+/* h1 {
   font-size: 3rem;
 }
 h2 {
   font-size: 2rem;
-}
-h3 {
+} */
+/* h3 {
   font-size: 1.25rem;
-}
-h4 {
+} */
+/* h4 {
   font-size: 0.875rem;
-}
+} */
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
@@ -261,10 +264,10 @@ p {
     font-size: 2.5rem;
   }
   h3 {
-    font-size: 1.75rem;
+    font-size: 3.75rem !important;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 2.50rem !important;
   }
   body {
     font-size: 1rem;
@@ -275,6 +278,17 @@ p {
   h4 {
     line-height: 1;
   }
+  .homepagenavbar{
+    background: #9d9696;
+  }
+}
+.titleTwo{
+  
+  background: linear-gradient(
+    to right, #dfb470, #a7800a,
+     #a81a0a, #e23d0b);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 /* section */
@@ -290,17 +304,14 @@ p {
   }
 }
 
+
+
 /*
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                        Navbar
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 */
 
-
-/* nav {
-  background: var(--clr-red-dark);
-  box-shadow: var(--light-shadow);
-} */
 .nav-header {
   display: flex;
   align-items: center;
@@ -344,7 +355,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 /* $$$$$$$$$$$$$$$$$$$ NAVBAR LINKS $$$$$$$$$$$$$$$$$$$$$$$ */
 .links a {
-  color:burlywood;
+  color:rgb(217, 192, 160);
   font-size: 1rem;
   text-transform: capitalize;
   /* letter-spacing: var(--spacing); */
@@ -369,9 +380,17 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 }
 .social-icons {
   display: flex;
-  /* margin-left: 0px 0px auto; */
   justify-content: center;
+  margin: 20px 0px auto;
+  /* background: #1022aa; */
 }
+.footerSocial-icons{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px 5px;
+  background: #1022aa;  
+}
+
 .links-container {
   height: 0;
   overflow: hidden;
@@ -382,9 +401,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 }
 
 @media screen and (min-width: 200px) and (max-width: 600px){
-  .homeTitle{
-    color:  #ff001e !important;   
-  }
   .navTitle{
     color: #ff8800 !important
   }
@@ -392,7 +408,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .nav-center {
     max-width: 1170px;    
     margin: 0 auto;
@@ -436,6 +452,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     margin: 0 0.5rem;
     color: var(--clr-primary-5);
     transition: var(--transition);
+    margin-top: 20px;
   }
   .social-icons a:hover {
     color: var(--clr-primary-7);

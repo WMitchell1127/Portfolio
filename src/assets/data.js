@@ -2,17 +2,18 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 // import { ContactBtn } from "../components/ContactBtn";
 // import Contact from '../components/Contact'
+import { About } from '../components/AboutPage'
 
 
 export const links = [
     {
-        id: '#aboutMe',
-        url: '/AboutPage.jsx',
+        id: 1,
+        url: '/',
         text: 'About',
     },
     {
         id: 2,
-        url: '/AboutPage',
+        url: '/',
         text: 'Profile',  
     },
     {
@@ -21,8 +22,8 @@ export const links = [
         text: 'Projects',  
     },
     {
-        id: 4,        
-        url: '/Contact',
+        id: '#contactForm',        
+        url: '/ContactForm',
         text: 'Contact',  
     },
     {

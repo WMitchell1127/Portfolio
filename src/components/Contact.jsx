@@ -1,11 +1,7 @@
 import React from "react";
-// import ContactBtn from '../components/ContactBtn'
 import { ContactForm } from '../components/ContactForm'
-import { links, social } from '../assets/data';
-import {
-  Container,
-
-} from "reactstrap"
+import { social } from '../assets/data';
+import { Container } from "reactstrap"
 
 export const ContactSec = () => {
 
@@ -45,8 +41,8 @@ export const ContactSec = () => {
 
           {/* //////////////// social media icons ////////////// */}
           <Container>
-            <div className="mt-3 text-center socialIcons">
-              <ul className='social-icons' style={{border:'3px solid red'}}>
+            <div className="mt-3 text-center footerSocialIcons">
+              <ul className='footerSocial-icons' >
                 {social.map((socialIcon) => {
                   const { id, url, icon } = socialIcon;
                   return (
