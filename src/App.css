@@ -368,8 +368,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
   /* font-size: large; */
 }
 .social-icons {
-  display: none;
-  margin-left: 0px 0px auto;
+  display: flex;
+  /* margin-left: 0px 0px auto; */
+  justify-content: center;
 }
 .links-container {
   height: 0;

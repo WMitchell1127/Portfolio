@@ -28,7 +28,7 @@ export const HomePage = () => {
                   const { id, url, icon } = socialIcon;
                   return (
                     <li key={id}>
-                      <a href={url}>{icon}</a>
+                      <a href={url} target='_blank'>{icon}</a>
                     </li>
                   );
                 })}

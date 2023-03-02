@@ -27,8 +27,9 @@ export const links = [
     },
     {
         id: 5,
-        url: './',
-        text: 'Resume',  
+        url: 'https://docs.google.com/document/d/1S0qEDqOw00y6Uni-snqjItDrg5v3aIdPtVHcnm3X_To/edit',
+        text: 'Resume',
+          
     },
 ];
 
