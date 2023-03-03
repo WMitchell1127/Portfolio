@@ -1,0 +1,13 @@
+@font-face{
+    font-family: myFont;
+    src: url(../font/GreatVibes-Regular.ttf);
+  }
+
+  @font-face{
+    font-family: myFontTwo;
+    src: url(../font/AguafinaScript-Regular.ttf);
+  }
+  @font-face{
+    font-family: DancingScript;
+    src: url(../font/DancingScript-VariableFont_wght.ttf);
+  }

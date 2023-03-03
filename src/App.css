@@ -88,20 +88,31 @@ Global Styles
   }
 }
 
-.homepagenavbar{
- background-image: linear-gradient(to right, black 30% , burlywood) !important;
+.homeNav{
+  width: 100%;
+  background-image: linear-gradient(to right, black 30% , burlywood, rgb(229, 84, 79)) !important;
 }
+
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* &&&&&&&&&&&&&&&&& Navbar &&&&&&&&&&&&&&&&&&&&&& */
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 .chaaTitle{
   color:burlywood !important;
-  border-bottom: 3px solid;
+  /* border-bottom: 3px solid; */
+  float: left;
+
+}
+
+.footer{
+  width: 100%;
 }
 @media screen and (max-width: 900px) {
   .chaaTitle{
     color: burlywood !important;
+  }
+  .chaaTitle2{
+    color: black !important;
   }
 }
 
@@ -304,6 +315,9 @@ p {
   }
 }
 
+.coderImg{
+  width: 30vw;
+}
 
 
 /*
@@ -387,8 +401,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 .footerSocial-icons{
   display: flex;
   justify-content: center;
-  margin-top: 50px 5px;
-  background: #1022aa;  
+  /* margin-top: 50px 5px; */
+  /* background: #1022aa;   */
 }
 
 .links-container {
@@ -410,7 +424,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 @media screen and (min-width: 600px) {
   .nav-center {
-    max-width: 1170px;    
+    /* max-width: 1170px;     */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -466,6 +480,12 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
   transform: translate(-50%, -50%);
 }
 
+
+#footer{
+  background-color: #930840;
+  width: 100%;
+  margin: 0px !important;
+}
 
 
 

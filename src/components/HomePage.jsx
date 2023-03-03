@@ -11,6 +11,7 @@ import IMG_0048 from "../assets/img/IMG_0048-edited.jpg"
 import { NavBar } from "./NavBar";
 import { About } from "./AboutPage";
 import { Skills } from "./Skills";
+import { BackToTopButton } from "./BackToTheTop";
 
 export const HomePage = () => {
   ///////// styling of page ///////////////////
@@ -65,20 +66,14 @@ export const HomePage = () => {
           </a>
         </div> */}
       </Container>
-      {/* <About />
+      {/* <About /> */}
       <Skills />
-      <ContactSec /> */}
-      <div class="footer-div" id="footer">
-        <ul class="footer-ul">
-          <li class="footer"><a href="#">Privacy</a></li>
-          <li class="footer"><a href="#">Terms</a></li>
-          <li class="footer"><a href="Images\License.txt" target="_blank">Licence</a></li>
-        </ul>
-      </div>
+      <ContactSec />
 
-      <footer id="footer">
-        <div class="div-social">
-          <div class="footer-a">
+
+      {/* <footer id="footer">
+        
+          <div id="footer" class="footer-a">
             <span>©Copyright 2020, Original Mitchell</span>
             <a href="#lost">
               <i
@@ -98,8 +93,16 @@ export const HomePage = () => {
             <a href="#">
               <img src="Images\Youtube.png" alt="Youtube-logo" class="Youtube-logo" /></a>
           </div>
-        </div>
-      </footer>
+          <div class="footer-div" id="footer">
+            <ul class="footer-ul">
+              <li class="footer"><a href="#">Privacy</a></li>
+              <li class="footer"><a href="#">Terms</a></li>
+              <li class="footer"><a href="Images\License.txt" target="_blank">Licence</a></li>
+            </ul>
+          </div>
+        
+      </footer> */}
+      <BackToTopButton/>
     </div>
   );
 };

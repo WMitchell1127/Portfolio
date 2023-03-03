@@ -39,8 +39,11 @@ export const ContactSec = () => {
             </span>
           </p>
 
-          {/* //////////////// social media icons ////////////// */}
-          <Container>
+          
+        </div>
+      </Container>
+      {/* //////////////// social media icons ////////////// */}
+      <footer className="footer">
             <div className="mt-3 text-center footerSocialIcons">
               <ul className='footerSocial-icons' >
                 {social.map((socialIcon) => {
@@ -54,9 +57,7 @@ export const ContactSec = () => {
               </ul>
               <h6>&copy; Copyright 2023 WM All rights reserved.</h6>
             </div>
-          </Container>
-        </div>
-      </Container>
+          </footer>
     </div>
   )
 }

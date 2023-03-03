@@ -8,15 +8,15 @@ import './assets/css/main.css';
 import './assets/vendor/fontAwesome/css/all.css';
 import './assets/vendor/bootswatch/cyborg.css';
 import 'react-toastify/dist/ReactToastify.css'
-import  './assets/style/font-face.css'
-import { HomePageHeader } from './components/HeaderPage';
+import  './assets/css/font-face.css'
+import { HeaderPage } from './components/HeaderPage';
 
 // import { NavBarTwo } from './components/NavbarTwo';
 
 export const App = () => {  
   return (
     <div className="App">
-      <HomePageHeader />      
+      <HeaderPage />      
       <HomePage />      
     </div>
   );

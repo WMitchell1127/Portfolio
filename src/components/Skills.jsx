@@ -8,13 +8,13 @@ import batman from '../assets/img/batman.jpg'
 
 export const Skills = () =>{
     return(
-        <div>
+        <div id="skills">
                 <Container className='mb-1'>
         {/* <!-- Experience Section --> */}
         <h1>Skills</h1>
         <Row className="experience-list" >
-          <Col sm='12' md='6' lg='4'>
-            <h1>Languages</h1>
+          <Col  sm='12' md='6' lg='4'>
+            <h4>Languages</h4>
             <h5 className='pl-3'>In Coding...</h5>
             <ul>
               <li>JavaScript</li>

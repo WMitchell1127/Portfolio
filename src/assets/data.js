@@ -8,22 +8,22 @@ import { About } from '../components/AboutPage'
 export const links = [
     {
         id: 1,
-        url: '/',
+        url: '#about',
         text: 'About',
     },
     {
         id: 2,
-        url: '/',
+        url: '#skills',
         text: 'Profile',  
     },
     {
         id: 3,
-        url: '/',
+        url: '#projects',
         text: 'Projects',  
     },
     {
-        id: '#contactForm',        
-        url: '/ContactForm',
+        id: 4,        
+        url: '#contactMe',
         text: 'Contact',  
     },
     {
