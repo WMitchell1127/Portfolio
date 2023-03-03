@@ -24,7 +24,7 @@ export const HomePage = () => {
         <div className="column">
           <div className="content1">
             <div className="circleText">
-              <h3 className="homeTitle">Hi, My name is Wayne Mitchell</h3>
+              <h4 className="homeTitle">Hi, My name is Wayne Mitchell</h4>
               <h4 className="homeTitle">I'm a Software Developer based Arizona</h4>
             </div>
 
@@ -66,7 +66,7 @@ export const HomePage = () => {
           </a>
         </div> */}
       </Container>
-      {/* <About /> */}
+      <About />
       <Skills />
       <ContactSec />
 

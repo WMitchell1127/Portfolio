@@ -419,7 +419,12 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     color: #ff8800 !important
   }
 }
-
+.imgSize{
+  width: 10rem !important;
+}
+.jsImg{
+  width: 10rem !important;
+}
 
 
 @media screen and (min-width: 600px) {
