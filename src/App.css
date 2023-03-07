@@ -1,5 +1,6 @@
 
-/*=============== 
+/*
+=============== 
 Variables
 ===============
 */
@@ -99,8 +100,8 @@ Global Styles
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 .chaaTitle{
   color:burlywood !important;
-  /* border-bottom: 3px solid; */
   float: left;
+  /* border-bottom: 3px solid; */
 
 }
 
@@ -121,7 +122,6 @@ Global Styles
 /* ############################################### */
 
 .homeDiv{
-  /* margin-top: 100px; */
   margin-left: 100px;
 }
 .row {
@@ -159,10 +159,8 @@ Global Styles
 
 
 .circleText{
-   /* padding-top: 150px; */
   padding: 0.5rem 1rem;
   margin: 4rem 0 0;
-  /* color: white; */
   font-size: 3rem;
   text-transform: uppercase;
   background: linear-gradient(black, burlywood, black);
@@ -170,10 +168,6 @@ Global Styles
 .gradient-text {
   background-image: linear-gradient(45deg, #f3ec78, #af4261);
 }
-/* .content {
-  background-color: white;
-  padding: 10px;
-} */
 
 .profileImg{ 
   width: 100%;
@@ -188,15 +182,6 @@ Global Styles
     width: 50%;
     /* background-color: red;   */
   }
-  .content1{
-  /* margin-top: 0%; */
-  /* margin-: 30%; */
-}
-  .content img{
-    /* width: 50%; */
-    /* z-index: 0.9; */
-  }
-  
   .homeDiv{
     margin-top: 5px;
     margin-left: 0;
@@ -390,7 +375,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
   /* background: var(--clr-primary-8); */
   color: var(--clr-grey-10);
   padding-left: .7rem;
-  /* font-size: large; */
+  
 }
 .social-icons {
   display: flex;
@@ -400,8 +385,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 }
 .footerSocial-icons{
   display: flex;
-  justify-content: center;
-  /* margin-top: 50px 5px; */
+  justify-content: center;  
   /* background: #1022aa;   */
 }
 

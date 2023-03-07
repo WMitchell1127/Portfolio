@@ -23,9 +23,8 @@ useEffect (() => {
     }
   })
 }, []);
-  //////////////////////////////////////////////////////
-  return (
-   
+ 
+  return (   
       <div onClick={() => window.scroll(0, 0)} className="back-to-top-btn">
         <i className="fas fa-chevron-up"></i>
         <p>Top</p>
