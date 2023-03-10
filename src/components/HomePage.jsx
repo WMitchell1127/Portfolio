@@ -36,36 +36,7 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
-      <Container>
-        {/* <div className="mt-3 text-center socialIcons">
-          <p>Copyright 2021</p>
-          <a href="#!">
-            <i
-              className="fab fa-twitter fa-3x twitter mr-2"
-              style={{ color: "#1da1f2" }}
-            ></i>
-          </a>
-          <a href="#!">
-            <i
-              className="fab fa-facebook fa-3x facebook mr-2"
-              style={{ color: "#1877f2" }}
-            ></i>
-          </a>
-          <a href="#!">
-            <i
-              className="fab fa-instagram fa-3x instagram mr-2"
-              style={{ color: "#c32aa3" }}
-            ></i>
-          </a>
-
-          <a href="#!">
-            <i
-              className="fab fa-github fa-3x snapchat mr-2"
-              style={{ color: "gray" }}
-            ></i>
-          </a>
-        </div> */}
-      </Container>
+      
       <About />
       <Skills />
       <ContactSec />

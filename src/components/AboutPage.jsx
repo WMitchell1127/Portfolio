@@ -51,48 +51,7 @@ export const About = () => {
         </Row> 
       </Container>
       <Container className='mb-1'>     
-        <Row className="m-3 services-menu" id="menu">
-          {/* <Col sm='12' md='6' lg='4'>
-            <h1 className="text-center mt-4">My Services</h1>
-            <h4>Web Design</h4>
-            <p className="text-grey">
-              Get the best designs, custom made, and eye catching. Have the site not only look good on
-              a computer screen but also on phones and tablets. Great UX and UI with responsive pages.
-            </p>
-
-            <h4>Programming</h4>
-            <p className="text-grey">
-              Algorithms, data structure, logins, registrations, forms, payments, and security. Organize
-              data, and make your site easy to access.
-            </p>
-
-            <h4>Search Engine Optimization</h4>
-            <p className="text-grey">
-              Get your site seen on search results and by people looking for your services.
-              Make the site accessible to everyone and all search engines. Measure the success of
-              the SEO by our analytics and by being in the top of the search results.
-            </p>
-
-            <h4>Digital Marketing</h4>
-            <p className="text-grey">
-              Have your business seen on all social media outlets and managed daily. Get your business noticed
-              by the public. If they cant see you they wont send their business your way.
-            </p>
-
-            <h4>Website Hosting</h4>
-            <p className="text-grey">
-              Low introductory rates, support, and maintenance. Our servers can handle your traffic with no worries.
-              Automatic software updates, security, and malware protection.
-            </p>
-          </Col> */}
-
-          {/* <Col sm='0' md='6' lg='8' className="servicesImg">
-            <img
-              src="./img/code4.jpg"
-              className="img-fluid"
-              alt="Menu"
-            />
-          </Col> */}
+        <Row className="m-3 services-menu" id="menu">          
         </Row>
       </Container>
     </div >

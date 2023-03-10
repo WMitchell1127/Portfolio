@@ -21,11 +21,6 @@ export const ContactSec = () => {
         <div style={secDiv} className="services-menu" id="contactUs">
           <h1 className="text-white m-2">Contact Me</h1>
           <ContactForm />
-
-          {/* <p className="mt-5">
-            {" "}
-            Do not hesitate to contact me for a Free Quote.
-          </p> */}
           <p>
              13201 S. Wakial loop
             Phoenix Az, 85044
