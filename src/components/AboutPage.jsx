@@ -44,9 +44,17 @@ export const About = () => {
               Get the best designs, custom made, and eye catching. Have the site not only look good on
               a computer screen but also on phones and tablets. Great UX and UI with responsive pages.
             </p>
-            <img src={Codes} alt="" className="coderImg"/>
-            <img src={Coder} alt="" className="coderImg"/>
-            <img src={Codes} alt="" className="coderImg"/>
+            <div>
+              <div>
+                <img src={Codes} alt="" className="coderImg"></img>
+                <h5>Port</h5>
+              </div>
+              <img src={Coder} alt="" className="coderImg"/>
+              <div>
+                <img src={Codes} alt="" className="coderImg"></img>
+                <h5>Port</h5>
+              </div>
+            </div>
 
         </Row> 
       </Container>
