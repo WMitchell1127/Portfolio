@@ -48,7 +48,7 @@ export const HeaderPage = () => {
                             marginRight: '1rem',
                             marginBottom: '1.5rem'
                         }} /> */}
-                    <span style={navTitle} className='chaaTitle'>chaa'h</span>
+                    <span style={navTitle} className='chaaTitle'>cheii'h</span>
                     <a href='admin-modal' className='chaaTitle2' style={navTitle2}>Designs</a>
                 </div>
             </div>    
