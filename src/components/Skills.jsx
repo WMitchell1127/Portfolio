@@ -13,9 +13,10 @@ export const Skills = () => {
         {/* <!-- Experience Section --> */}
         <h1>Skills</h1>
         <Row className="experience-list" >
-          <Col sm='12' md='6' lg='4'>
+          <Col sm='12' md='6' lg='4' className="skillIcons">
             <h4>Languages</h4>
             <h5 className='pl-3'>In Coding...</h5>
+            
             <ul>
               {/* need to update href */}
               <a href=""><li>JavaScript</li></a>              
@@ -42,13 +43,13 @@ export const Skills = () => {
             </ul>
           </Col>
 
-          <Col sm='0' md='6' lg='8' className="">
+          {/* <Col sm='0' md='6' lg='8' className="">
             <img
               src={batman}
               className="img-fluid"
               alt="Menu"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </div>

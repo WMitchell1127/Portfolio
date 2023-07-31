@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Navbar } from 'reactstrap';
-// import { links, social } from '../../data/navbarData';
-// import sun from '../assets/img/sun.svg';
+
 
 export const HeaderPage = () => {
     const [showLinks, setShowLinks] = useState(false);
@@ -48,8 +47,8 @@ export const HeaderPage = () => {
                             marginRight: '1rem',
                             marginBottom: '1.5rem'
                         }} /> */}
-                    <span style={navTitle} className='chaaTitle'>cheii'h</span>
-                    <a href='admin-modal' className='chaaTitle2' style={navTitle2}>Designs</a>
+                    <span style={navTitle} className='chaaTitle'>che'ah</span>
+                    <a href='admin-modal' className='chaaTitle2' style={navTitle2}>WebDesigns</a>
                 </div>
             </div>    
         </Navbar>

@@ -7,7 +7,7 @@ import { social } from '../assets/data';
 
 
 import { ContactSec } from "./Contact"
-import IMG_0048 from "../assets/img/IMG_0048-edited.jpg"
+import Selfie from "../assets/img/Subject.png"
 import { NavBar } from "./NavBar";
 import { About } from "./AboutPage";
 import { Skills } from "./Skills";
@@ -32,13 +32,13 @@ export const HomePage = () => {
         </div>
         <div className="column" style={{ height: '50vh' }} >
           <div className="content" >
-            <img src={IMG_0048} alt="Selfie" className="profileImg" ></img>
+            <img src={Selfie} alt="Selfie" className="profileImg" ></img>
           </div>
         </div>
       </div>
       
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <ContactSec />
 
 

@@ -53,6 +53,31 @@ body {
   transition: all 0.5s ease-in-out;
   opacity: 1;
 }
+/* %%%%%%%%%%%%%%%%%%%%%%& Skills Icons &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+.skillIcons{
+  
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&& Project Section Images &&&&&&&&&&&&&&&&&&&&&&&&&&&&&  */
+/* #projects{
+  padding-right: ;
+} */
+.projectImgs{
+  display: flex;
+  flex-direction: row;  
+}
+.projImg1{
+  margin: 10px;
+}
+.projImg2{
+  margin: 10px;
+}
+.coderImg{
+  height: 30vh;
+}
+.projImg3{
+  margin: 10px;
+}
 
 
 /* media queries */

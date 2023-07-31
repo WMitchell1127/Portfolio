@@ -1,14 +1,15 @@
 import React from "react"
+import { Skills } from "./Skills"
 import batman from '../assets/img/batman.jpg'
-import John from '../assets/img/myEyes/john-ford-point-1200x858.jpg'
+import John from '../assets/img/ad100b3f-john-ford-point-1200x858.jpg'
 import {
   Container,
   Row,
   Col,
 
 } from 'reactstrap'
-import Codes from "../assets/img/Codes.jpg"
-import Coder from '../assets/img/3_what-does-a-web-designer-do-840x420.jpeg'
+import Codes from "../assets/img/Choropleth_Map.png"
+import Coder from '../assets/img/Home.jpg'
 
 export const About = () => {
   return (
@@ -38,19 +39,22 @@ export const About = () => {
             </p>
           </Col>
         </Row>
+        <Skills/>
         <Row id="projects">
           <h3 >Projects</h3>
         <p className="text-grey">
               Get the best designs, custom made, and eye catching. Have the site not only look good on
               a computer screen but also on phones and tablets. Great UX and UI with responsive pages.
             </p>
-            <div>
-              <div>
+            <div className="projectImgs">
+              <div className="projImg1">
                 <img src={Codes} alt="" className="coderImg"></img>
                 <h5>Port</h5>
               </div>
-              <img src={Coder} alt="" className="coderImg"/>
-              <div>
+              <div className="projImg2">
+                <img src={Coder} alt="" className="coderImg"/>
+              </div>
+              <div className="projImg3">
                 <img src={Codes} alt="" className="coderImg"></img>
                 <h5>Port</h5>
               </div>
