@@ -11,18 +11,7 @@ export const HeaderPage = () => {
         setShowLinks(!showLinks);
     };
 
-    // useEffects here is used for the CSS and responsive drop-menu
-    // useEffect(() => {
-        // The ### .getBoundingClientReact() ### method returns an object
-        //  providing info about the size of an element and its
-        //  position relative to the viewport.
-    //     const linksHeight = linksRef.current.getBoundingClientRect().height;
-    //     if (showLinks) {
-    //         linksContainerRef.current.style.height = `${linksHeight}px`;
-    //     } else {
-    //         linksContainerRef.current.style.height = '0px';
-    //     }
-    // }, [showLinks]);
+
 
     const navTitle = {
         fontFamily: 'myFont',

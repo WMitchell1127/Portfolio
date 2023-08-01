@@ -30,11 +30,7 @@ export const NavBar = () => {
     return (
         <>
             <div className='nav-center'>
-                <div className='nav-header'>
-                    {/* <a href="https://reactjs.org/" target={'_blank'} rel="noopener noreferrer">
-                    <img src={logo} className='logo' alt='logo' style={{color:'red'}}/>
-                    </a> */}
-                    {/* <p className='navTitle' style={{paddingTop:"10px",color:'burlywood',fontSize:'30px'}}>Web Development</p> */}
+                <div className='nav-header'>                    
                     <button className='nav-toggle' onClick={toggleLinks}>
                         <FaBars style={{ color: 'burlywood' }} />
                     </button>

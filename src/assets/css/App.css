@@ -78,6 +78,8 @@ Global Styles
 
 .App-link {
   color: #61dafb;
+  float: right;
+  border: #61dafb 2px solid;
 }
 
 @keyframes App-logo-spin {
@@ -91,7 +93,7 @@ Global Styles
 
 .homeNav{
   width: 100%;
-  background-image: linear-gradient(to right, black 30% , burlywood, rgb(229, 84, 79)) !important;
+  /* background-image: linear-gradient(to right, black 30% , burlywood, rgb(229, 84, 79)) !important; */
 }
 
 
@@ -102,7 +104,12 @@ Global Styles
   color:burlywood !important;
   float: left;
   /* border-bottom: 3px solid; */
-
+}
+.topNav{
+  border: #61dafb 3px solid;
+  float: right;
+  /* padding: 0 !important; */
+  width: 100%;
 }
 
 .footer{
@@ -120,10 +127,6 @@ Global Styles
 /* ############################################### */
 /* ***************** HomePage CSS **************** */
 /* ############################################### */
-
-.homeDiv{
-  margin-left: 100px;
-}
 .row {
   margin: 0px 0px !important;  
   justify-content: center;
@@ -135,22 +138,25 @@ Global Styles
   padding: 8px;
 }
 
-
+/************* HomePage content *****************/
+.content1{
+  box-shadow: 0 5px 25px 20px black inset;  
+}
 /* Create four equal columns that floats next to each other */
-.column {  
-  /* float: left; */
+.content {  
   width: 40%; 
-  height: 40vh !important; 
+  height: auto;
+  padding: 1rem 1rem; 
 }
 
 /* Clear floats after rows */ 
-.column {
+.content{
   content: "";
   display: table;
   clear: both;
+  /* border: red 2px solid; */
 }
 
-/* Content */
 
 .center{
   text-align: center;
@@ -159,27 +165,44 @@ Global Styles
 
 
 .circleText{
-  padding: 0.5rem 1rem;
-  margin: 4rem 0 0;
-  font-size: 3rem;
-  text-transform: uppercase;
-  background: linear-gradient(black, burlywood, black);
+  /* height: 80%; */
+  /* text-align: center; */
+  /* border: 3px solid green; */
+  /* margin: auto; */
+  
+  /* margin: rem 0 0; */
+  /* font-size: 3rem; */
+  /* text-transform: uppercase; */
+  /* background: linear-gradient(black, burlywood, black); */
 }
 .gradient-text {
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  /* background-image: linear-gradient(45deg, #f3ec78, #af4261); */
 }
 
 .profileImg{ 
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   margin-left: 0px;
   /* border: 3px solid */
 }
+.profileImg{
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(75, 66, 66, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(75, 66, 66, 0.75);
+  box-shadow: 12px 29px 81px 0px rgba(75, 66, 66, 0.75);
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
+   .circleText{
+    margin: 1rem 0 0;
+   } 
+}
+@media screen and (max-width: 900px) {
   .column{
-    width: 50%;
+    width: 40%;    
+    /* border: #9d9696 2px solid; */
+    
     /* background-color: red;   */
   }
   .homeDiv{
@@ -393,6 +416,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
   height: 0;
   overflow: hidden;
   transition: var(--transition);
+  text-align: right;
 }
 .show-container {
   height: 10rem;

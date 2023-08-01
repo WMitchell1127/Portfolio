@@ -21,22 +21,19 @@ export const HomePage = () => {
         <NavBar />
       </div>
       <div className="row">
-        <div className="column">
-          <div className="content1">
-            <div className="circleText">
-              <h4 className="homeTitle">Hi, My name is Wayne Mitchell</h4>
-              <h4 className="homeTitle">I'm a Software Developer based Arizona</h4>
+        <div className="content">
+          <div className="circleText center">
+            <div className="homePageText">
+              <h2 className="homeTitle">Wayne Mitchell</h2>
+              <h4 className="homeTitle">Software Developer</h4>
             </div>
-
           </div>
         </div>
-        <div className="column" style={{ height: '50vh' }} >
-          <div className="content" >
-            <img src={Selfie} alt="Selfie" className="profileImg" ></img>
-          </div>
+        <div className="content content1" >
+          <img src={Selfie} alt="Selfie" className="profileImg" style={{ paddingTop: '3.5vh' }}></img>
         </div>
       </div>
-      
+
       <About />
       {/* <Skills /> */}
       <ContactSec />
@@ -73,7 +70,7 @@ export const HomePage = () => {
           </div>
         
       </footer> */}
-      <BackToTopButton/>
+      <BackToTopButton />
     </div>
   );
 };
