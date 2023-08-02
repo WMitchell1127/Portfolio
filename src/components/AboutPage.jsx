@@ -16,6 +16,7 @@ export const About = () => {
     <div>
       <Container className='mt-5 mb-5' id="aboutMe">
         <h1 id="about" className="text-center">About Me</h1>
+        <h5 className="text-center">Coding since 2020</h5>
         <Row className="" id="about">
           <Col sm='4' md='6' lg='8'>
             <img
@@ -25,8 +26,7 @@ export const About = () => {
             />
           </Col>
 
-          <Col sm='8' md='6' lg='4'>
-            <h5 className="text-center">Coding since 2020</h5>
+          <Col sm='8' md='6' lg='4'>            
             <p className="text-large">
               I first learned to code at Persevere code camp with the MERN stack.
               Since then I have continued to grow and acquire new languages. I am honest, reliable, trustworthy, and very affordable.

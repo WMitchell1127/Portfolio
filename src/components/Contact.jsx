@@ -32,9 +32,7 @@ export const ContactSec = () => {
                 wayne.mitchell.1127@gmail.com
               </a>
             </span>
-          </p>
-
-          
+          </p>          
         </div>
       </Container>
       {/* //////////////// social media icons ////////////// */}
